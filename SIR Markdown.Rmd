@@ -35,3 +35,4 @@ This application shows the following results:
 * if it is 1, then the disease has reached an endemic presence
 * if is greater than 1, then there is an epidemic.
 
+
