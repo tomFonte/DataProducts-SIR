@@ -46,8 +46,7 @@ shinyServer(
     output$Result<-renderPrint({dynamic()[input$days,-1]})
      
     output$Plot<-renderPlot({
-#       Error in as.vector(x, mode) : 
-#         cannot coerce type 'closure' to vector of type 'any'
+
                  matplot(time(), dynamic()[,-1], type = "l", xlab = "Time",
                          ylab = "Susceptibles and Recovereds", main = "SIR Model", lwd = 1, lty = 1, bty = "l", col=c(4,3,2))
                  legend('right', c('R', 'I', 'S'), lty=3:1, col=c(4,3,2), bty='n',cex=1.5)
