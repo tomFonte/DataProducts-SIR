@@ -36,7 +36,7 @@ the epidemic. Here, I present two such models, Exponential Growth, and Suceptibl
 * For Exponential Growth models, it is necessary to know the growth rate and the initial suceptible population
 * For SIR model, it is necessary to know the transmission rate and the number of days a number remains infecting people before recovery, as well as the initial suceptible population, initial infectious people (it must be greater than 0), and initial recovered people.
 
---- .class #id 
+---
 
 ## Future progress
 
