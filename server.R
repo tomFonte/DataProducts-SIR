@@ -32,7 +32,7 @@ dynamics=function(Type,time,state,parameters){
 shinyServer(
   function(input,output){
     
-    time<-reactive({seq(from=1,to=input$days,by=1)})
+    time<-reactive({seq(from=1,to=input$days,by=0.01)})
     init<-reactive({c(input$Suceptible,input$Infectious,input$Recovered)})
     params<-reactive({c(input$beta,1/input$gama)})
     dynamic<-reactive(dynamics(Type="SIR",time=as.numeric(time()),state=init(),parameters=params()))
