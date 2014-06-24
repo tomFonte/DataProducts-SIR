@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Epidemiological Deterministic Models</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Epidemiological Deterministic Models">
+  <meta name="author" content="Tomas Fontecilla">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Epidemiological Deterministic Models</h1>
+    <h2>Exponential Growth and SIR model</h2>
+    <p>Tomas Fontecilla<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>This presentation</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Epidemiological Models</li>
+<li>Use of shinyApp</li>
+<li>Future progress</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Epidemiological Models</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Early estimation of the basic reproduction number R\(_0\) as early as possible in the face of
+an epidemic is crucial for public health decision making. </li>
+<li>The reason for this is that knowledge of the reproduction number gives valuable information for the estimation of the transmission potential of the epidemic and for the comparison of possible epidemic management strategies. </li>
+<li>In an epidemic, there is an initial stochastic phase followed by exponential growth continuing until the number of members of the population who are no longer susceptible to infection becomes a significant fraction of the population. </li>
+<li>It may be possible to obtain real time data sufficient to estimate this initial exponential growth rate, and this leads to the task of using these data to estimate R\(_0\).</li>
+<li>However, the estimate of R0 obtained depends on the specific model being used for
+the epidemic. Here, I present the simplest model, the Suceptible-Infectious-Recovered (SIR) model.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Use of shinyApp</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This application shows the use of two types of deterministic models</li>
+<li>For SIR model, it is necessary to know the transmission rate and the number of days a number remains infecting people before recovery, as well as the initial suceptible population, initial infectious people (it must be greater than 0), and initial recovered people.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Future progress</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This application only has one type of model incorporated. In the future I expect to add other types of models such as:</p>
+
+<ul>
+<li>SIS model: Suceptible - Infectious - Suceptible model, where the recovery time is too short. An examplary disease would be common cold.</li>
+<li>SEIR model: Suceptible - Exposed - Infectious - Recovered model, where there is a lapse of time where a person is infected but is not yet infectious, been a carrier of the disease. An example would be measles.</li>
+<li>vaccined interrupted models of the previous ones. As before, but with the usage of a vaccine, such as the case of Influenza Like illness (ILI) disease.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='This presentation'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Epidemiological Models'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Use of shinyApp'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Future progress'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
